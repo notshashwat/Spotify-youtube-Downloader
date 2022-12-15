@@ -1,0 +1,34 @@
+<!doctype html>
+
+<h1>Playlist Download Menu </h1>
+<h2>(click on a song to start download)</h2>
+<h2>(click on a playlist to download all songs of playlist)</h2>
+
+{% for playlist,song in result.items() %}
+
+  <table border = '1'>
+
+    <tr>
+     
+      <th> <h3><strong>{{ playlist }}</strong></h3> </th>
+      <th> <form  method="post"><button type="submit" name="playlist_btn" value="{{ playlist }}">Download Playlist</button></form></th>
+      <!-- <form method="POST"><input type="submit" name="playlist_btn" value="{{ playlist }}"></form> </td> -->
+
+      
+    </tr>
+    {%for s in song%}
+    <tr>
+       
+      
+       
+              <td> {{ s }}</td>
+              <!-- <td><form method="POST"> <input type="submit" name="submit_button" value="{{ s }}"></form></td> -->
+              <td><form method="post"><button type="submit" name="submit_button" value="{{ s }}">Download Song</button></form></td>
+      
+        
+    </tr>
+
+    {% endfor %}
+ </table>
+
+ {% endfor %}

@@ -1,0 +1,15 @@
+# for secret spotify keys
+
+secretkeys.py
+
+#for downloaded songs during testing 
+
+downloaded_music/
+
+#for cache
+
+__pycache__/
+
+#more 
+
+.cache/
