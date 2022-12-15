@@ -1,1 +1,1 @@
-This is a tool to downloa dyou rspotify songs through youtube
+This is a tool to download your spotify songs through youtube
